@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.gildedrose.GildedRoseTest" tests="15" skipped="0" failures="0" errors="0" timestamp="2023-10-02T08:04:53" hostname="PORTABLECESAR" time="0.114">
+  <properties/>
+  <testcase name="TEST 10" classname="com.gildedrose.GildedRoseTest" time="0.065"/>
+  <testcase name="TEST 11" classname="com.gildedrose.GildedRoseTest" time="0.006"/>
+  <testcase name="TEST 12" classname="com.gildedrose.GildedRoseTest" time="0.001"/>
+  <testcase name="TEST 13" classname="com.gildedrose.GildedRoseTest" time="0.001"/>
+  <testcase name="TEST 14" classname="com.gildedrose.GildedRoseTest" time="0.001"/>
+  <testcase name="TEST 15" classname="com.gildedrose.GildedRoseTest" time="0.001"/>
+  <testcase name="TEST 1" classname="com.gildedrose.GildedRoseTest" time="0.003"/>
+  <testcase name="TEST 2" classname="com.gildedrose.GildedRoseTest" time="0.001"/>
+  <testcase name="TEST 3" classname="com.gildedrose.GildedRoseTest" time="0.001"/>
+  <testcase name="TEST 4" classname="com.gildedrose.GildedRoseTest" time="0.001"/>
+  <testcase name="TEST 5" classname="com.gildedrose.GildedRoseTest" time="0.001"/>
+  <testcase name="TEST 6" classname="com.gildedrose.GildedRoseTest" time="0.001"/>
+  <testcase name="TEST 7" classname="com.gildedrose.GildedRoseTest" time="0.002"/>
+  <testcase name="TEST 8" classname="com.gildedrose.GildedRoseTest" time="0.002"/>
+  <testcase name="TEST 9" classname="com.gildedrose.GildedRoseTest" time="0.002"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
