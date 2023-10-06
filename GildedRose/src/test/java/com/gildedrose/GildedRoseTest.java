@@ -140,4 +140,59 @@ class GildedRoseTest {
     app.updateQuality();
     assertEquals(50, element.quality, "Sellin decreased");
   }
+
+  @Test
+  @DisplayName("TEST 16")
+  void test16() {
+    Item element = new Item("Aged Brie",5, 48);
+    assertEquals("Aged Brie, 5, 48", element.toString(), "Sellin decreased");
+  }
+
+/* ------------------------------------- PYTEST ------------------------------------- */
+
+@Test
+  @DisplayName("TEST 17")
+  void test17() {
+    Item element = new Item("RandomName",10, 0);
+    GildedRose app = new GildedRose(new Item[] {element});
+    app.updateQuality();
+    assertEquals(0, element.quality, "Sellin decreased");
+  }
+
+@Test
+  @DisplayName("TEST 18")
+  void test18() {
+    Item element = new Item("Backstage passes to a TAFKAL80ETC concert",11, 0);
+    GildedRose app = new GildedRose(new Item[] {element});
+    app.updateQuality();
+    assertEquals(1, element.quality, "Sellin decreased");
+  }
+  
+@Test
+  @DisplayName("TEST 19")
+  void test19() {
+    Item element = new Item("Backstage passes to a TAFKAL80ETC concert",1, 1);
+    GildedRose app = new GildedRose(new Item[] {element});
+    app.updateQuality();
+    assertEquals(4, element.quality, "Sellin decreased");
+  }
+
+@Test
+  @DisplayName("TEST 20")
+  void test20() {
+    Item element = new Item("Backstage passes to a TAFKAL80ETC concert",6, 1);
+    GildedRose app = new GildedRose(new Item[] {element});
+    app.updateQuality();
+    assertEquals(3, element.quality, "Sellin decreased");
+  }
+
+@Test
+  @DisplayName("TEST 21")
+  void test21() {
+    Item element = new Item("RandomName",-1, 0);
+    GildedRose app = new GildedRose(new Item[] {element});
+    app.updateQuality();
+    assertEquals(0, element.quality, "Sellin decreased");
+  }
+
 }
