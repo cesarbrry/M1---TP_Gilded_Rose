@@ -62,7 +62,7 @@ public class Item {
             break;
 
             case aged :
-                if (this.sellIn > 0 )
+                if (this.sellIn < 0 )
                 {
                     this.quality += 1;
                 }
