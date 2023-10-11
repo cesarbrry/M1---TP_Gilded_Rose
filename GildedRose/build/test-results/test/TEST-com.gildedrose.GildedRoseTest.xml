@@ -1,27 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.gildedrose.GildedRoseTest" tests="21" skipped="0" failures="0" errors="0" timestamp="2023-10-11T08:42:11" hostname="PORTABLECESAR" time="0.105">
+<testsuite name="com.gildedrose.GildedRoseTest" tests="23" skipped="0" failures="0" errors="0" timestamp="2023-10-11T12:17:47" hostname="PORTABLECESAR" time="0.116">
   <properties/>
-  <testcase name="[ TEST 10 ] : Test de la ligne 74" classname="com.gildedrose.GildedRoseTest" time="0.024"/>
+  <testcase name="[ TEST 10 ] : Test de la ligne 74" classname="com.gildedrose.GildedRoseTest" time="0.025"/>
   <testcase name="[ TEST 11 ] : Test que l'élément ne passe pas dans les boucles qui rejettent son nom" classname="com.gildedrose.GildedRoseTest" time="0.005"/>
-  <testcase name="[ TEST 12 ] : Test de condition sur les lignes 42 à 46" classname="com.gildedrose.GildedRoseTest" time="0.0"/>
-  <testcase name="[ TEST 13 ] : Test de condition sur les lignes 28 à 30" classname="com.gildedrose.GildedRoseTest" time="0.001"/>
+  <testcase name="[ TEST 12 ] : Test de condition sur les lignes 42 à 46" classname="com.gildedrose.GildedRoseTest" time="0.001"/>
+  <testcase name="[ TEST 13 ] : Test de condition sur les lignes 28 à 30" classname="com.gildedrose.GildedRoseTest" time="0.0"/>
   <testcase name="[ TEST 14 ] : Test de condition sur les lignes 32 à 38" classname="com.gildedrose.GildedRoseTest" time="0.001"/>
-  <testcase name="[ TEST 15 ] : Test de condition sur les lignes 42 à 46" classname="com.gildedrose.GildedRoseTest" time="0.001"/>
+  <testcase name="[ TEST 15 ] : Test de condition sur les lignes 42 à 46" classname="com.gildedrose.GildedRoseTest" time="0.0"/>
   <testcase name="[ TEST 16 ] Test de la classe Item.Java : Phrase retournée" classname="com.gildedrose.GildedRoseTest" time="0.016"/>
-  <testcase name="TEST 17" classname="com.gildedrose.GildedRoseTest" time="0.002"/>
-  <testcase name="TEST 18" classname="com.gildedrose.GildedRoseTest" time="0.001"/>
-  <testcase name="TEST 19" classname="com.gildedrose.GildedRoseTest" time="0.001"/>
-  <testcase name="TEST 20" classname="com.gildedrose.GildedRoseTest" time="0.0"/>
-  <testcase name="TEST 21" classname="com.gildedrose.GildedRoseTest" time="0.0"/>
-  <testcase name="TEST 1" classname="com.gildedrose.GildedRoseTest" time="0.0"/>
-  <testcase name="TEST 2" classname="com.gildedrose.GildedRoseTest" time="0.001"/>
-  <testcase name="[ TEST 3" classname="com.gildedrose.GildedRoseTest" time="0.002"/>
-  <testcase name="[ TEST 4 ] : Test de qualité lignes 26 - 30" classname="com.gildedrose.GildedRoseTest" time="0.001"/>
-  <testcase name="[ TEST 5 ] : Test de qualité des lignes 32 - 38" classname="com.gildedrose.GildedRoseTest" time="0.0"/>
+  <testcase name="[ TEST 17 ]" classname="com.gildedrose.GildedRoseTest" time="0.0"/>
+  <testcase name="[ TEST 18 ]" classname="com.gildedrose.GildedRoseTest" time="0.001"/>
+  <testcase name="[ TEST 19 ]" classname="com.gildedrose.GildedRoseTest" time="0.0"/>
+  <testcase name="[ TEST 20 ]" classname="com.gildedrose.GildedRoseTest" time="0.002"/>
+  <testcase name="[ TEST 21 ]" classname="com.gildedrose.GildedRoseTest" time="0.002"/>
+  <testcase name="[ TEST 22 ] : Verfication que la qualité diminue de 2 si jamais Sellin est superieur ou egal a 0" classname="com.gildedrose.GildedRoseTest" time="0.001"/>
+  <testcase name="[ TEST 23 ] : verification que la qualité diminue de 4 si jamais SellIn est a moins de 0" classname="com.gildedrose.GildedRoseTest" time="0.001"/>
+  <testcase name="[ TEST 1 ] : Test que la qualité descend pour un element different de sulfuras" classname="com.gildedrose.GildedRoseTest" time="0.001"/>
+  <testcase name="[ TEST 2 ] : Verification que le produit vielli à chaque boucle" classname="com.gildedrose.GildedRoseTest" time="0.0"/>
+  <testcase name="[ TEST 3 ] : Verif que la qualité ne depasse jamais la valeur 50" classname="com.gildedrose.GildedRoseTest" time="0.001"/>
+  <testcase name="[ TEST 4 ] : Test de qualité lignes 26 - 30" classname="com.gildedrose.GildedRoseTest" time="0.0"/>
+  <testcase name="[ TEST 5 ] : Test de qualité des lignes 32 - 38" classname="com.gildedrose.GildedRoseTest" time="0.001"/>
   <testcase name="[ TEST 6 ] : Test de qualité meme en respectant pas la ligne 42" classname="com.gildedrose.GildedRoseTest" time="0.001"/>
   <testcase name="[ TEST 7 ] : Test des lignes 80-82" classname="com.gildedrose.GildedRoseTest" time="0.001"/>
-  <testcase name="[ TEST 8 ] : Test des conditions Quality pour sulfuras( lignes 17 / 64)" classname="com.gildedrose.GildedRoseTest" time="0.0"/>
-  <testcase name="[ TEST 9 ] : Test des lignes 66-68" classname="com.gildedrose.GildedRoseTest" time="0.001"/>
+  <testcase name="[ TEST 8 ] : Test des conditions Quality pour sulfuras( lignes 17 / 64)" classname="com.gildedrose.GildedRoseTest" time="0.001"/>
+  <testcase name="[ TEST 9 ] : Test des lignes 66-68" classname="com.gildedrose.GildedRoseTest" time="0.0"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

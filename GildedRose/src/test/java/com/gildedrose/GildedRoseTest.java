@@ -5,6 +5,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class GildedRoseTest {
 
+
   @Test
   @DisplayName("[ TEST 1 ] : Test que la qualité descend pour un element different de sulfuras")
   void test1() {
