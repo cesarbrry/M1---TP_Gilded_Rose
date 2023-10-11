@@ -6,30 +6,30 @@ import static org.junit.jupiter.api.Assertions.*;
 class GildedRoseTest {
 
   @Test
-  @DisplayName("TEST 1")
+  @DisplayName("[ TEST 1 ] : Test que la qualité descend pour un element different de sulfuras")
   void test1() {
     Item element = new Item("RandomName",10, 1);
     GildedRose app = new GildedRose(new Item[] {element});
     app.updateQuality();
-    assertEquals(0, element.quality, "Sellin decreased");
+    assertEquals(0, element.quality, "[ L.26 - L.30 ] : Test OK / Quality decrease");
   }
 
   @Test
-  @DisplayName("TEST 2")
+  @DisplayName("[ TEST 2 ] : Verification que le produit vielli à chaque boucle")
   void test2() {
     Item element = new Item("RandomName",10, 1);
     GildedRose app = new GildedRose(new Item[] {element});
     app.updateQuality();
-    assertEquals(9, element.sellIn, "Sellin decreased");
+    assertEquals(9, element.sellIn, "[ L.42 - L.46 ] : Test OK / Sellin Decrease");
   }
  
   @Test
-  @DisplayName("[ TEST 3")
+  @DisplayName("[ TEST 3 ] : Verif que la qualité ne depasse jamais la valeur 50")
   void test3() {
     Item element = new Item("RandomName",1, 51);
     GildedRose app = new GildedRose(new Item[] {element});
     app.updateQuality();
-    assertEquals(50, element.quality, "Sellin decreased");
+    assertEquals(50, element.quality, "[ L.42 - L.46 ] : Test OK / Quality don't change");
   }
 
   @Test
@@ -38,7 +38,7 @@ class GildedRoseTest {
     Item element = new Item("Aged Brie",1, 49);
     GildedRose app = new GildedRose(new Item[] {element});
     app.updateQuality();
-    assertEquals(50, element.quality, "Sellin decreased");
+    assertEquals(50, element.quality, "[ L.26 - L.30 ] : Test OK / Quality increased");
   }
 
   
@@ -48,7 +48,7 @@ class GildedRoseTest {
     Item element = new Item("Backstage passes to a TAFKAL80ETC concert",10, 48);
     GildedRose app = new GildedRose(new Item[] {element});
     app.updateQuality();
-    assertEquals(50, element.quality, "Sellin decreased");
+    assertEquals(50, element.quality, "[ L.32 - L.38 ] : Test OK / Quality increased");
   }
 
   
@@ -58,7 +58,7 @@ class GildedRoseTest {
     Item element = new Item("Backstage passes to a TAFKAL80ETC concert",6, 48);
     GildedRose app = new GildedRose(new Item[] {element});
     app.updateQuality();
-    assertEquals(50, element.quality, "Sellin decreased");
+    assertEquals(50, element.quality, "[ L.42 ] : Test OK / Quality increased");
   }
 
   @Test
@@ -67,7 +67,7 @@ class GildedRoseTest {
     Item element = new Item("Aged Brie",-1, 48);
     GildedRose app = new GildedRose(new Item[] {element});
     app.updateQuality();
-    assertEquals(50, element.quality, "Sellin decreased");
+    assertEquals(50, element.quality, "[ L.80 - L.82 ] : Test OK / Quality increased");
   }
 
   @Test
@@ -76,7 +76,7 @@ class GildedRoseTest {
     Item element = new Item("Sulfuras, Hand of Ragnaros",-1, 0);
     GildedRose app = new GildedRose(new Item[] {element});
     app.updateQuality();
-    assertEquals(0, element.quality, "Sellin decreased");
+    assertEquals(0, element.quality, "[ L.17 - L.64 ] : Test OK / Quality don't change");
   }
 
   @Test
@@ -85,7 +85,7 @@ class GildedRoseTest {
     Item element = new Item("Random Name",-1, 49);
     GildedRose app = new GildedRose(new Item[] {element});
     app.updateQuality();
-    assertEquals(47, element.quality, "Sellin decreased");
+    assertEquals(47, element.quality, "[ L.66 - L.68 ] : Test OK / Quality decreased");
   }
 
   @Test
@@ -94,7 +94,7 @@ class GildedRoseTest {
     Item element = new Item("Backstage passes to a TAFKAL80ETC concert",-1, 1);
     GildedRose app = new GildedRose(new Item[] {element});
     app.updateQuality();
-    assertEquals(0, element.quality, "Sellin decreased");
+    assertEquals(0, element.quality, "[ L.74 ] : Test OK / Quality decreased");
   }
 
   @Test
@@ -103,7 +103,7 @@ class GildedRoseTest {
     Item element = new Item("Sulfuras, Hand of Ragnaros",-1, 49);
     GildedRose app = new GildedRose(new Item[] {element});
     app.updateQuality();
-    assertEquals("Sulfuras, Hand of Ragnaros",element.name, "Sellin decreased");
+    assertEquals("Sulfuras, Hand of Ragnaros",element.name, "Test pour sulfuras qui ne change jamais");
   }
 
   @Test
@@ -112,7 +112,7 @@ class GildedRoseTest {
     Item element = new Item("Aged Brie",-1, 50);
     GildedRose app = new GildedRose(new Item[] {element});
     app.updateQuality();
-    assertEquals(50, element.quality, "Sellin decreased");
+    assertEquals(50, element.quality, "[ L.42 - L.46 ] : Test OK / Quality don't change");
   }
   
 
@@ -122,7 +122,7 @@ class GildedRoseTest {
     Item element = new Item("Backstage passes to a TAFKAL80ETC concert",11, 49);
     GildedRose app = new GildedRose(new Item[] {element});
     app.updateQuality();
-    assertEquals(50, element.quality, "Sellin decreased");
+    assertEquals(50, element.quality, "[ L.28 - L.30 ] : Test OK / Quality increased");
   }
 
   @Test
@@ -131,7 +131,7 @@ class GildedRoseTest {
     Item element = new Item("Backstage passes to a TAFKAL80ETC concert",10, 49);
     GildedRose app = new GildedRose(new Item[] {element});
     app.updateQuality();
-    assertEquals(50, element.quality, "Sellin decreased");
+    assertEquals(50, element.quality, "[ L.32 - L.38 ] : Test OK / Quality increased");
   }
 
   @Test
@@ -140,7 +140,7 @@ class GildedRoseTest {
     Item element = new Item("Backstage passes to a TAFKAL80ETC concert",5, 48);
     GildedRose app = new GildedRose(new Item[] {element});
     app.updateQuality();
-    assertEquals(50, element.quality, "[ L.42 - L.46 ] : Test OK / Qualité qui augmente");
+    assertEquals(50, element.quality, "[ L.42 - L.46 ] : Test OK / Quality increased");
   }
 
   @Test
@@ -153,48 +153,70 @@ class GildedRoseTest {
 /* ------------------------------------- PYTEST ------------------------------------- */
 
 @Test
-  @DisplayName("TEST 17")
+  @DisplayName("[ TEST 17 ]")
   void test17() {
     Item element = new Item("RandomName",10, 0);
     GildedRose app = new GildedRose(new Item[] {element});
     app.updateQuality();
-    assertEquals(0, element.quality, "Sellin decreased");
+    assertEquals(0, element.quality, "Quality don't change");
   }
 
 @Test
-  @DisplayName("TEST 18")
+  @DisplayName("[ TEST 18 ]")
   void test18() {
     Item element = new Item("Backstage passes to a TAFKAL80ETC concert",11, 0);
     GildedRose app = new GildedRose(new Item[] {element});
     app.updateQuality();
-    assertEquals(1, element.quality, "Sellin decreased");
+    assertEquals(1, element.quality, "Quality increased");
   }
   
 @Test
-  @DisplayName("TEST 19")
+  @DisplayName("[ TEST 19 ]")
   void test19() {
     Item element = new Item("Backstage passes to a TAFKAL80ETC concert",1, 1);
     GildedRose app = new GildedRose(new Item[] {element});
     app.updateQuality();
-    assertEquals(4, element.quality, "Sellin decreased");
+    assertEquals(4, element.quality, "Quality increased");
   }
 
 @Test
-  @DisplayName("TEST 20")
+  @DisplayName("[ TEST 20 ]")
   void test20() {
     Item element = new Item("Backstage passes to a TAFKAL80ETC concert",6, 1);
     GildedRose app = new GildedRose(new Item[] {element});
     app.updateQuality();
-    assertEquals(3, element.quality, "Sellin decreased");
+    assertEquals(3, element.quality, "Quality increased");
   }
 
 @Test
-  @DisplayName("TEST 21")
+  @DisplayName("[ TEST 21 ]")
   void test21() {
     Item element = new Item("RandomName",-1, 0);
     GildedRose app = new GildedRose(new Item[] {element});
     app.updateQuality();
-    assertEquals(0, element.quality, "Sellin decreased");
+    assertEquals(0, element.quality, "Quality don'tchange");
+  }
+
+
+
+/* ------------------------------------- CONJURED ------------------------------------- */
+
+@Test
+  @DisplayName("[ TEST 22 ] : Verfication que la qualité diminue de 2 si jamais Sellin est superieur ou egal a 0")
+  void test22() {
+    Item element = new Item("Conjured",0, 50);
+    GildedRose app = new GildedRose(new Item[] {element});
+    app.updateQuality();
+    assertEquals(48, element.quality, "TEST OK / Quality decreased by 2");
+  }
+
+@Test
+  @DisplayName("[ TEST 23 ] : verification que la qualité diminue de 4 si jamais SellIn est a moins de 0")
+  void test23() {
+    Item element = new Item("Conjured",-1, 50);
+    GildedRose app = new GildedRose(new Item[] {element});
+    app.updateQuality();
+    assertEquals(46, element.quality, "TEST OK / Quality decreased by 4");
   }
 
 }
